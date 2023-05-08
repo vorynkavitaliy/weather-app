@@ -8,7 +8,7 @@
     },
     "scripts": {
         "start:develop": "vite serve --mode dev",
-        "build": "vite build",
+        "build": "vite build --mode dev",
         "preview": "vite preview",
         "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore"
     },
