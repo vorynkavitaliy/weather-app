@@ -1,0 +1,120 @@
+@use 'sass:math';
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: $main-font;
+    font-size: $font-size;
+    color: var(--text-color);
+    background-color: var(--backgorund-color);
+    transition: background-color .2s ease-in;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+i,
+em,
+strong {
+    font-style: normal;
+    text-decoration: none;
+    font-weight: normal;
+    color: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+a,
+button {
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-family: inherit;
+    background-color: transparent;
+}
+
+ul {
+    list-style: none;
+    font-family: inherit;
+}
+
+img {
+    user-select: none;
+}
+
+input,
+textarea,
+button,
+select {
+    outline: none;
+    border: none;
+    font-family: inherit;
+    background-color: transparent;
+}
+
+input[type='submit'] {
+    cursor: pointer;
+    font-family: inherit;
+}
+
+input::-webkit-input-placeholder,
+input::-moz-placeholder,
+input:-moz-placeholder,
+input:-ms-input-placeholder {
+    color: initial;
+    font-family: inherit;
+}
+
+textarea::-webkit-input-placeholder,
+textarea::-moz-placeholder,
+textarea:-moz-placeholder,
+textarea:-ms-input-placeholder {
+    font-family: inherit;
+}
+
+.pointer {
+    cursor: pointer;
+}
+a {
+    user-select: none;
+}
+img,
+video {
+    user-select: none;
+    // pointer-events: none;
+}
+.scrollbar {
+    padding: 0;
+    padding-right: 20px;
+    scrollbar-width: 1px;
+    scrollbar-color: $black;
+    &::-webkit-scrollbar {
+        width: 12px;
+        border: 1px solid $black;
+    }
+
+    &::-webkit-scrollbar-track {
+        border-radius: 12px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: red;
+        border: 3px solid transparent;
+        background-clip: content-box;
+    }
+}
+
+.container {
+    display: block;
+    width: 100%;
+    max-width: $max-width + px;
+    margin: 0 auto;
+    padding: 0px 32px;
+}

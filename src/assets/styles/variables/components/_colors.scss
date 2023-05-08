@@ -1,0 +1,33 @@
+$white: #ffffff;
+$black: #000000;
+$primary: #044355;
+$danger: #ff939b;
+$success: #7bc76f;
+$warning: #ffcd93;
+$info: #e9efed;
+$disabled: #7e7676;
+$light: #f1f1f1;
+
+:root {
+    --backgorund-color: #f1f1f1;
+    --text-color: #000000;
+    --primary: #044355;
+    --danger: #ff939b;
+    --success: #7bc76f;
+    --warning: #ffcd93;
+    --info: #e9efed;
+    --disabled: #7e7676;
+    --light: #f1f1f1;
+}
+
+.dark-theme {
+    --backgorund-color: #292c35;
+    --text-color: #ffffff;
+    --primary: #044355;
+    --danger: #ff939b;
+    --success: #7bc76f;
+    --warning: #ffcd93;
+    --info: #636363;
+    --disabled: #7e7676;
+    --light: #f1f1f1;
+}

@@ -1,0 +1,50 @@
+@use 'sass:math';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+$font-weight: (400, 500, 600, 700);
+
+$size: (
+    h1: 38px,
+    h2: 28px,
+    h3: 22px,
+    profile: 36px,
+    title: 17px,
+    main: 14px,
+);
+
+.underline-link {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: calc(28/17 * 100%);
+    text-align: right;
+    letter-spacing: 0.0125em;
+    text-decoration-line: underline;
+    @include screen($lmd) {
+        font-size: 17px;
+    }
+}
+
+.ellipsis {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.slice-height-2 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+@each $class in $font-weight {
+    .fw-#{$class} {
+        font-weight: $class;
+    }
+}
+
+@each $class, $type in $size {
+    .size-#{$class} {
+        font-size: $type;
+    }
+}
